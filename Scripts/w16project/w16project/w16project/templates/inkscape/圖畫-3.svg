@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1441"
+   inkscape:export-filename="C:\Users\clair\Desktop\upicon.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="圖畫-3.svg">
+  <defs
+     id="defs1435" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="2022.4842"
+     inkscape:cy="317.68694"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-32000"
+     inkscape:window-y="-32000"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1438">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="圖層 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:#eeeeee;fill-opacity:0;stroke:#000000;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -277.35434,-295.28888 c -83.59445,0 -150.89262,67.29815 -150.89262,150.8926 v 590.99493 c 0,83.59444 67.29817,150.89261 150.89262,150.89261 h 643.9116 c 83.59444,0 150.89209,-67.29817 150.89209,-150.89261 v -590.99493 c 0,-83.59445 -67.29765,-150.8926 -150.89209,-150.8926 z"
+       id="rect4670-6" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:40;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2018-3"
+       width="1.9041311"
+       height="551.41028"
+       x="46.574833"
+       y="-112.7355"
+       ry="1.21456" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:40.91984177;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2018-0-7-3"
+       width="2.4146132"
+       height="192.81728"
+       x="-126.99388"
+       y="-105.39148"
+       ry="0.42470759"
+       transform="matrix(-0.89189034,0.45225172,-0.69511148,-0.71890196,0,0)" />
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:40.91984177;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2018-0-7-3-8"
+       width="2.4146132"
+       height="192.81729"
+       x="52.846821"
+       y="-99.202423"
+       ry="0.42470759"
+       transform="matrix(-0.45225171,-0.89189035,0.71890196,-0.69511148,0,0)" />
+  </g>
+</svg>

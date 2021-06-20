@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet"  type="text/css"  href="accordion.css" >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>提筆</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+
+	</style>
+</head>
+
+<body>
+	<header>
+	<iframe src='https://my.spline.design/0417-94b89b120d644126a2bbd05a31b1a824/' frameborder='0' width='1520' height="450"></iframe>
+	</header>
+
+
+	<nav id= "main">
+    <ul class="flex-nav">
+		<li class="logo"><a href="index.html">提筆</a></li>
+        <li><a href="aboutus.html">關於我</a></li>
+        <li><a href="animation.html">動畫特效</a></li>
+        <li><a href="uidesign.html">介面設計</a></li>
+        <li><a href="database.html">乾貨收藏</a></li>
+        <li><a href="rmdbook.html">好書推薦</a></li>
+	</ul>
+	</nav>
+
+	<div class="site-wrap">
+		<p>嗨~</p>
+		<p>這是喜好科技，同時熱愛藝術，</p>
+		<p>正認真找路的十九歲大學生。</p><br>
+		<p>彙集整理了一些資訊，</p>
+		<p>想帶大家淺淺的認識文藝產業，<p>
+		<p>也希望能幫助同樣在摸索的你。</p><br>
+		<p>還記得童年那些光芒四射的夢想嗎？</p>
+		<p>現在，一起著手讓它成真吧。</p><br>
+		<p>任何問題建議，歡迎e-mail或IG私訊給我！</p>
+		<br><br>
+		<p>Hi~</p>
+		<p>This is a 19 year-old student from Taiwan,</p>
+		<p>who is passionate about both high-tech and art.</p><br>
+		<p>Here I compile and organize some information</p>
+		<p>to briefly introduce curtural and creative industries.</p>
+		<p>Hope to help people explore this field.</p><br>
+		<p>To all the dreams like twinkle stars,</p>
+		<p>It's time to make them real.</p>
+		<p>If you never try, you will never know.</p><br>
+		<p>If there is any questions or advise, </p>
+		<p>feel free to e-mail or DM me on Instagram.</p>
+			</div>	
+	
+	<footer class="footer" align= "center" valign= "middle">
+		
+		
+		<a href="https://www.instagram.com/e1m.c/"><img src="insicon.png",  height ="24"></a> &nbsp;
+		<a href="mailto:clairefuyu@alum.ccu.edu.tw" >
+		<img src="mailicon.png",  height ="24"></a>
+		&nbsp;
+		<a href="index.html"><img src="upicon.png", height= "24"></a>
+		<p><a>Copyright © 2021 提筆 Pick Up Your Pen.</a></p>
+		<p><a>All Rights Reserved. </a></p>
+		
+	</footer>
+
+
+<script>
+
+	const nav = document.querySelector('#main');
+	const topOfNav = nav.offsetTop;
+	
+	function fixNav() {
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+
+</script>
+	
+
+</body>
+</html>

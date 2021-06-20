@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet"  type="text/css"  href="accordion.css" >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>關於我</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+	
+	</style>
+</head>
+
+<body>
+
+	<nav id= "main">
+    <ul class="flex-nav">
+		<li><a href="index.html">提筆</a></li>
+        <li><a href="aboutus.html">關於我</a></li>
+        <li><a href="animation.html">動畫特效</a></li>
+        <li><a href="uidesign.html">介面設計</a></li>
+        <li><a href="database.html">乾貨收藏</a></li>
+        <li><a href="rmdbook.html">好書推薦</a></li>
+	</ul>
+	</nav>
+
+	<div class= "circular-square" align= "center" valign= "middle"><img src="profile.jpeg" width= "400" height= "400" alt=""/ ></div>
+	
+	
+	<div class="site-wrap">
+		<p>傅榆</p>
+		<p>來日方長，記得嚮往餘生。</p>
+		</div>	
+	<div class="tt-plugin-event" data-title="吃" data-style="button" data-start-at="20210501T050000+0800" data-end-at="20210501T060000+0800" data-all-day="false"></div>
+	<script src="https://plugins.timetreeapp.com/sdk_v1.js" async defer></script>
+	
+	<footer class="footer" align= "center" valign= "middle">
+		
+		
+		<a href="https://www.instagram.com/e1m.c/"><img src="insicon.png",  height ="24"></a> &nbsp;
+		<a href="mailto:clairefuyu@alum.ccu.edu.tw" >
+		<img src="mailicon.png",  height ="24"></a>
+		&nbsp;
+		<a href="aboutus.html"><img src="upicon.png", height= "24"></a>
+		<p><a>Copyright © 2021 提筆 Pick Up Your Pen.</a></p>
+		<p><a>All Rights Reserved. </a></p>
+		
+	</footer>
+
+
+<script>
+
+	const nav = document.querySelector('#main');
+	const topOfNav = nav.offsetTop;
+	
+	function fixNav() {
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+
+</script>
+	
+
+</body>
+</html>

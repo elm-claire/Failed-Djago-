@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet"  type="text/css"  href="accordion.css" >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>關於我</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+	
+	</style>
+</head>
+
+<body>
+	
+	<nav id= "main">
+    <ul class="flex-nav">
+		<li><a href="index.html">提筆</a></li>
+        <li><a href="aboutus.html">關於我</a></li>
+        <li><a href="animation.html">動畫特效</a></li>
+        <li><a href="uidesign.html">介面設計</a></li>
+        <li><a href="database.html">乾貨收藏</a></li>
+        <li><a href="rmdbook.html">好書推薦</a></li>
+	</ul>
+	</nav>
+
+	<div class= "circular-square" align= "center" valign= "middle"><img src="dribbble.jpg" width= "400" height= "400" alt=""/ ></div>
+		
+	<div class="site-wrap">
+		
+		<br><p>“The name Dribbble came about from the dual metaphors of bouncing ideas and leaking your work.”</p>
+		<p>dribbble 是籃球的運球，</p><br/>
+		<p>在這可以看到設計師的日常和作品，</p>
+		<p>不過沒有獲得邀請碼的人，不能發文喔。</p>
+		
+		</div>	
+	<div class= "circular-square" align= "center" valign= "middle"><img src="blender.png" width= "400" height= "400" alt=""/ ></div>
+		
+	<div class="site-wrap">
+		<br><p>Blender</p><br/>
+		<p>Everyone should be free to create 3D CG content, with free technical and creative production means and free access to markets.</p>
+		<p>免費的開源 3D 創作套件，支持 3D 建模、裝配、動畫、模擬</p>
+		<p>渲染、合成和運動追蹤，甚至視頻編輯和遊戲創建！</p>
+		<p>(不過要把快捷鍵背熟，操作會比較順暢喔。</p>
+		<div class= "square" align= "center" valign= "middle"><img src="badminton1.png" width= "400" height= "250" alt=""/ ></div>
+		<p>附上我自己建的羽毛球~</p>
+		</div>	
+	
+	<div class= "circular-square" align= "center" valign= "middle"><img src="justfont.jpg" width= "400" height= "400" alt=""/ ></div>
+	
+	<div class="site-wrap">
+		<p>Justfont引言：</p>
+		<p>字體不但佔據閱讀的目光，也引導了生活中的每個決定。</p>
+		<p>字體更構築了城市街道的風景，是關乎美感，最重要的視覺纖維。</p>
+		<p>在人人都能用字型的時代，更能透過方便的科技，<p>
+		<p>將專家職人的心血結晶應用在生活中。</p>
+	</div>	
+	<div class="site-wrap">
+		<p>Justfont的免費字體：</p>
+		<img src="justfont2.png" width= "600" height= "225" alt=""/ >
+		<p>去年三月推出的可愛粉圓體，</p>
+		<p>繼2015金萱體募資成功後，為回饋台灣社會而誕現</p>
+		<p>可自由商用，傳播及轉用！<p>
+	</div>	
+	<div class= "circular-square" align= "center" valign= "middle"><img src="medibang.png" width= "400" height= "400" alt=""/ ></div>
+	<div class="site-wrap">
+		<br><p>MediBang Paint Pro</p><br/>
+		<p>是免費、跨平台、支援繁體中文的</p>
+		<p>插畫、漫畫繪製軟體。</p>
+		<p>支援 JPG、PNG、GIF 和 BMP 等圖檔格式。<p>
+		<p>以下附上我用它畫的T-shirt設計</p>
+		<div class= "rectangle" align= "center" valign= "middle"><img src="0412.1.png" width= "450" height= "800" alt=""/ ></div>
+		<div class= "rectangle" align= "center" valign= "middle"><img src="0412.2.png" width= "450" height= "800" alt=""/ ></div>
+	</div>	
+	
+	<div class="tt-plugin-event" data-title="網頁設計報告" data-style="button" data-start-at="20210607T080000+0800" data-end-at="20210607T100000+0800" data-all-day="false"></div>
+	<script src="https://plugins.timetreeapp.com/sdk_v1.js" async defer></script>
+
+	<footer class="footer" align= "center" valign= "middle">
+		
+		
+		<a href="https://www.instagram.com/e1m.c/"><img src="insicon.png",  height ="24"></a> &nbsp;
+		<a href="mailto:clairefuyu@alum.ccu.edu.tw" >
+		<img src="mailicon.png",  height ="24"></a>
+		&nbsp;
+		<a href="database.html"><img src="upicon.png", height= "24"></a>
+		<p><a>Copyright © 2021 提筆 Pick Up Your Pen.</a></p>
+		<p><a>All Rights Reserved. </a></p>
+		
+	</footer>
+
+
+<script>
+
+	const nav = document.querySelector('#main');
+	const topOfNav = nav.offsetTop;
+	
+	function fixNav() {
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+
+</script>
+	
+
+</body>
+</html>

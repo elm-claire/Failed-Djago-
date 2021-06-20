@@ -1,0 +1,19 @@
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'phone.html', {})
+
+
+from django.http import HttpResponse
+
+
+from week10project.models import User
+
+def ccu409123456_function(request):
+    user=request.GET['UserName']
+    mail=request.GET['UserMail']
+
+    u = User(username=user, email=mail)
+    u.save()
+    return render(request, 'users_template.html', {'users_list': User.objects.all()})
+#    return HttpResponse(user + ', 你輸入的email是' + mail)

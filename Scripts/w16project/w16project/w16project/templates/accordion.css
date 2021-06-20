@@ -1,0 +1,153 @@
+html {
+	box-sizing: border-box;
+	background:linear-gradient(to bottom, #AEEADF, #E597FF);
+	font-family: 'Noto Serif TC', serif;
+	font-size: 20px;
+	}
+body {
+	margin: 0px;
+	padding: 0px;
+	flex-direction: column;
+	height: 100%;
+	}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.site-wrap {
+  max-width: 800px;
+  margin: 70px auto;
+  background:#eeeeee;
+  padding:40px;
+  text-align: justify; /*強制使尾端對齊*/
+  flex-grow: 1;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+
+.content{
+	padding-bottom: 50px;/*隨footer高度adjust*/
+}
+
+.footer{
+	height: 140px;
+	margin-top: 40px; /*隨footer高度adjust*/
+	background-color : none; 
+	font-size: 15px;
+
+}
+
+
+h1 a:hover{
+	font-size: 36px;
+	color: #2E2E2E;
+	transition-duration: 0.3s;
+	border-radius:20px;
+	}
+nav{
+	top:0;
+	margin: 0;
+	width: 100%;
+	transition:all 0.5s;
+	position: relative;
+	z-index: 1;
+	}
+
+nav > ul {
+	background-color: #eeeeee;
+	list-style: none;  
+	margin: 0;
+	padding: 0;
+	display: flex;
+	}
+
+.fixed-nav nav {
+  position: fixed;
+  }
+
+.circular-square{
+	margin: 70px auto;
+	border-radius:50%;
+	width: 400px;
+	height: 400px;
+	overflow:hidden;
+	position: relative;
+	}
+.circular-square img{
+	transition: all 1s ease-out;
+	}
+.circular-square img:hover{
+	transform: scale(1.2);
+	}
+	
+.square{
+	margin: 70px auto;
+	width: 400px;
+	height: 250px;
+	overflow:hidden;
+	position: relative;
+	}
+.square img{
+	transition: all 1s ease-out;
+	}
+.square img:hover{
+	transform: scale(1.2);
+	}
+	
+.rectangle{
+	margin: 70px auto;
+	width: 450px;
+	height: 800px;
+	overflow:hidden;
+	position: relative;
+	}
+.rectangle img{
+	transition: all 1s ease-out;
+	}
+.rectangle img:hover{
+	transform: scale(1.7);
+	}
+.animations{
+	margin: 70px auto;
+	
+}
+nav a {
+    color: inherit; /* 移除超連結顏色 */
+    display: block; /* 讓 <a> 填滿 <li> */
+    font-size: 1.5rem;
+    padding: 20px;
+    text-decoration: none;  /* 移除超連結底線 */
+	transition:all 0.3s;
+	text-transform: uppercase;
+	font-size: 18px
+}
+
+i.logo a{
+	color:black;
+	}
+
+nav a:hover {
+    background-color:#18DCD6;
+    color: white;
+	font-size: 24px;
+	transition-duration: 0.3s;
+	border-radius:20px;
+
+}
+.flex-nav{
+	display: flex;
+	justify-content: center;
+	}
+
+nav li {
+  flex:1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixed-nav li.logo { 
+  max-width: 700px;}
+  
+  

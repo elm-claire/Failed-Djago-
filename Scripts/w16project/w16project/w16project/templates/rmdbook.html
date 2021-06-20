@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet"  type="text/css"  href="accordion.css" >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>關於我</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+	
+	
+*{margin:0;padding:0;font-size:18px;list-style:none;}
+.menu{
+	margin:70px auto;
+	width:210px;
+	border:1px solid #eee;}
+.menu p{height:50px;line-height:50px;background:#FAD8D6;font-weight:bold;border-bottom:2px solid #ccc;text-indent:20px;cursor:pointer;}
+.menu div ul{display:none;}
+.menu li{height:440px;line-height:40px;text-indent:20px;}
+	</style>
+</head>
+
+<body>
+	
+	<nav id= "main">
+    <ul class="flex-nav">
+		<li><a href="index.html">提筆</a></li>
+        <li><a href="aboutus.html">關於我</a></li>
+        <li><a href="animation.html">動畫特效</a></li>
+        <li><a href="uidesign.html">介面設計</a></li>
+        <li><a href="database.html">乾貨收藏</a></li>
+        <li><a href="rmdbook.html">好書推薦</a></li>
+	</ul>
+	</nav>
+	
+
+	
+
+<div class="menu" id="menu">
+	
+	<div>
+	<p>字型相關</p>
+	<ul style="display:block">
+		<li><a href="https://www.books.com.tw/products/0010825361"target="_blank"><img src= "design1.jpeg", width= "400"></a></li>
+		<li><a href="https://www.books.com.tw/products/0010587919"target="_blank"><img src= "design2.jpeg", width= "400"></a></li>
+	</ul>
+	</div>
+	<div>
+	<p>設計思考</p>
+		<ul>
+		<li><a href="https://www.books.com.tw/products/0010698623?loc=P_br_r0vq68ygz_D_2aabd0_B_1"target="_blank"><img src= "design3.jpeg", width= "400"></a></li>
+		<li><a href="https://www.books.com.tw/products/0010650214?sloc=main"target="_blank"><img src= "design4.jpeg", width= "400"></a></li>
+		</ul>
+	</div>
+	<div>
+	<p>平面設計</p>
+		<ul>
+		<li><a href="https://www.books.com.tw/products/0010874789?sloc=reprod_t_2"target="_blank"><img src= "design8.jpg", width= "400"></a></li>
+		<li><a href="https://www.books.com.tw/products/0010852892?sloc=main"target="_blank"><img src= "design7.jpg", width= "400"></a></li>
+		</ul>
+	</div>
+	<div>
+	<p>配色設計</p>
+		<ul>
+		<li><a href="https://www.books.com.tw/products/0010814812?loc=P_br_r0vq68ygz_D_2aabd0_B_2"target="_blank"><img src= "design9.jpg", width= "400"></a></li>
+		<li><a href="https://www.books.com.tw/products/0010818128?loc=P_br_r0vq68ygz_D_2aabd0_B_1"target="_blank"><img src= "design10.jpg", width= "400"></a></li>
+		</ul>
+	</div>
+	<div>
+	<p>行銷設計</p>
+		<ul>
+		<li><a href="https://www.books.com.tw/products/0010893900?sloc=main"target="_blank"><img src= "design11.jpg", width= "400"></a></li>
+		<li><a href="https://www.books.com.tw/products/0010873664?sloc=main"target="_blank"><img src= "design12.jpg", width= "400"></a></li>
+		</ul>
+	</div>
+	<div>
+	<p>其他推薦</p>
+		<ul>
+		<li><a href="https://www.books.com.tw/products/0010822522?sloc=main"target="_blank"><img src= "design5.jpeg", width= "400"></a></li>
+		</ul>
+	</div>
+	</div>
+	
+</div>
+<div>
+	<footer class="footer" align= "center" valign= "middle">
+		
+		
+		<a href="https://www.instagram.com/e1m.c/"><img src="insicon.png",  height ="24"></a> &nbsp;
+		<a href="mailto:clairefuyu@alum.ccu.edu.tw" >
+		<img src="mailicon.png",  height ="24"></a>
+		&nbsp;
+		<a href="rmdbook.html"><img src="upicon.png", height= "24"></a>
+		<p><a>Copyright © 2021 提筆 Pick Up Your Pen.</a></p>
+		<p><a>All Rights Reserved. </a></p>
+		
+	</footer>
+</div>
+
+<script>
+
+	const nav = document.querySelector('#main');
+	const topOfNav = nav.offsetTop;
+	
+	function fixNav() {
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+
+
+	window.onload=function(){
+var menu=document.getElementById("menu");
+var ps=menu.getElementsByTagName("p");
+var uls=menu.getElementsByTagName("ul");
+for(var i in ps){
+ps[i].id=i;
+ps[i].onclick=function(){
+var u=uls[this.id];
+if (u.style.display=='block'){
+u.style.display="none";
+}else{
+u.style.display="block";
+}
+} 
+} 
+}
+</script>
+
+	
+
+</body>
+</html>

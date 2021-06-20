@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet"  type="text/css"  href="accordion.css" >
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>關於我</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+	.square1{
+	margin: 70px auto;
+	width: 600px;
+	height: 225p6x;
+	overflow:hidden;
+	position: relative;
+	}
+.square1 img{
+	transition: all 1s ease-out;
+	}
+.square1 img:hover{
+	transform: scale(1.2);
+	}
+	.square2{
+	margin: 20px auto;
+	width: 1200px;
+	height:400px;
+	overflow:hidden;
+	position: relative;
+	}
+.square2 img{
+	transition: all 1s ease-out;
+	}
+.square2 img:hover{
+	transform: scale(1.2);
+	}
+.square3{
+	margin: 20px auto;
+	width: 600px;
+	height: 240p6x;
+	overflow:hidden;
+	position: relative;
+	}
+	</style>
+</head>
+
+	
+<body>
+	<nav id= "main">
+    <ul class="flex-nav">
+		<li><a href="index.html">提筆</a></li>
+        <li><a href="aboutus.html">關於我</a></li>
+        <li><a href="animation.html">動畫特效</a></li>
+        <li><a href="uidesign.html">介面設計</a></li>
+        <li><a href="database.html">乾貨收藏</a></li>
+        <li><a href="rmdbook.html">好書推薦</a></li>
+	</ul>
+	</nav>
+	<div class="site-wrap">
+	<p>這是Tubik Design 替 Bennet Tea設計的網站</p>
+	<p>我想由此開始最能清晰看見UI設計的成品，</p>
+	<p>打造一個兼具好看與好用的使用者介面。</p>
+	<div class="square1"  align= "center"  valign= "middle" ><video src="bennett tea website interactions tubik design.mp4"width= "400" height= "400" controls></video>
+	</div></div>
+	
+	<div class= "circular-square" align= "center" valign= "middle"><img src="gal shir a.jpg" width= "400" height= "400" alt=""/ ></div>
+		<div class="site-wrap">
+		<br><p>Gal Shir
+		</p><br/>
+		<p>來自以色列的UI設計師和插畫師，</p>
+		<p>可愛簡約的畫風加上多彩的呈現十分有魅力！</p>
+		<p>也在社群上傳結合動畫的繪畫影片，</p>
+		<p>感覺是個相當幽默的人呢~</p>
+		<p>有時間不妨上youtube或dribbble欣賞一下吧。</p>
+		<p>以下是一些他的作品~</p></div>
+		
+		<div class="site-wrap">
+		<div class="square3"  align= "center"  valign= "middle" ><video src="galshirvid.mp4"width= "400" height= "300" controls></video>
+		<br><br/>
+		<br></br>
+		<img src="galshir2.jpg" width= "450" height= "600" alt=""/ >
+		</div>	
+		<br></br>
+		<iframe name="toppage" width=600 height=500 marginwidth=0 marginheight=0 frameborder="no" border="0"  src="carousel.html" ></iframe>
+		</div>
+
+		
+	<div class= "circular-square" align= "center" valign= "middle"><img src="fourgods1.jpeg" width= "400" height= "400" alt=""/ ></div>
+		<div class="site-wrap">
+		<p>UX跟UI並不一樣，</p>
+		<p>就當補充介紹一下，</p>
+		<p>先簡單放兩者的比較圖</p>
+		<img src="uiux.difference.jpeg",  height ="400"></div>
+		
+		<div class="site-wrap">
+		
+		<br>
+		<p>UX四神湯</p><br/>
+		<p>團隊四人皆畢業於台灣清華大學工業工程系，</p>
+		<p>之後往使用者體驗設計師發展(user-experience designer)，</p>
+		<div class="square2"  align= "center"  valign= "middle" >
+		<img src="fourgods2.jpeg",  height ="400"></div>
+		<p>共同經營UX四神湯，在Medium上有心路歷程和求職及能力的補帖，</p>
+		<p>去年也舉辦設計師師徒制的活動，幫助同領域的大家一起進步！</p>
+		</div>
+
+
+		
+	<footer class="footer" align= "center" valign= "middle">
+		<a href="https://www.instagram.com/e1m.c/"><img src="insicon.png",  height ="24"></a> &nbsp;
+		<a href="mailto:clairefuyu@alum.ccu.edu.tw" >
+		<img src="mailicon.png",  height ="24"></a>
+		&nbsp;
+		<a href="uidesign.html"><img src="upicon.png", height= "24"></a>
+		<p><a>Copyright © 2021 提筆 Pick Up Your Pen.</a></p>
+		<p><a>All Rights Reserved. </a></p>
+		
+	</footer>
+
+
+<script>
+
+	const nav = document.querySelector('#main');
+	const topOfNav = nav.offsetTop;
+	
+	function fixNav() {
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+
+</script>
+	
+
+</body>
+</html>

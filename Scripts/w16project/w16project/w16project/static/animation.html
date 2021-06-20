@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet"  type="text/css"  href="accordion.css" >
+<head>
+    <meta charset="utf-8" />
+    <title>關於我</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+
+	</style>
+</head>
+
+<body>
+	
+	<nav id= "main">
+    <ul class="flex-nav">
+		<li><a href="index.html">提筆</a></li>
+        <li><a href="aboutus.html">關於我</a></li>
+        <li><a href="animation.html">動畫特效</a></li>
+        <li><a href="uidesign.html">介面設計</a></li>
+        <li><a href="database.html">乾貨收藏</a></li>
+        <li><a href="rmdbook.html">好書推薦</a></li>
+	</ul>
+	</nav>
+	<div class="site-wrap">
+		<p>運用Spline製作簡單的立體物件，</p>
+		<p>並加入一些變化，例如顏色和位置隨動畫而更替。</p>
+		</div>	
+	<div class= "animations" align="center"><iframe src=https://my.spline.design/untitled-6709d0625857d4091e4fc4166090f660/ frameborder='0' width='1300' height='650'></iframe></div>
+	<div class="site-wrap">
+		<p>也可以將物件合併，</p>
+		<p>製作群體的動畫。</p>
+		</div>	
+	<div class= "animations" align="center"><iframe src=https://my.spline.design/librarylathe-08b474491d17b4e7c1faed593d1e4c97/ frameborder='0' width='1300' height='650'></iframe></div>
+	<div class="site-wrap">
+		<p>最後是可以設定各種按鍵有不同動畫，</p>
+		<p>例如在這當滑鼠hover至白方塊上方時，</p>
+		<p>便會顯示轉動。</p>
+		</div>	
+	<div class= "animations" align="center"><iframe src='https://my.spline.design/libraryiconcloud-b2e81d75a5fb2760bbbeb35d1fd61d28/' frameborder='0' width='1300' height='650'></iframe></div>
+	<div class="site-wrap">
+		<p>順道一提，</p>
+		<p>拖曳滑鼠左鍵可以從不同角度觀看喔。</p>
+		<p>還有滾動中鍵做放大縮小！</p>
+		<p>Spline 能免費使用嵌入在網頁裡，非常推薦大家使用~</p>
+		</div>	
+	 
+	<footer class="footer" align= "center" valign= "middle">
+		
+		
+		<a href="https://www.instagram.com/e1m.c/"><img src="insicon.png",  height ="24"></a> &nbsp;
+		<a href="mailto:clairefuyu@alum.ccu.edu.tw" >
+		<img src="mailicon.png",  height ="24"></a>
+		&nbsp;
+		<a href="animation.html"><img src="upicon.png", height= "24"></a>
+		<p><a>Copyright © 2021 提筆 Pick Up Your Pen.</a></p>
+		<p><a>All Rights Reserved. </a></p>
+		
+	</footer>
+
+
+<script>
+
+	const nav = document.querySelector('#main');
+	const topOfNav = nav.offsetTop;
+	
+	function fixNav() {
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+
+</script>
+	
+
+</body>
+</html>
